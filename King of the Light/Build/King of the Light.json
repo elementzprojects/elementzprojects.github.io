@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "King of the Light",
+"dataUrl": "King of the Light.data.unityweb",
+"wasmCodeUrl": "King of the Light.wasm.code.unityweb",
+"wasmFrameworkUrl": "King of the Light.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
