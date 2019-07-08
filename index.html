@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <section class="page">
     <section id="navbar">
         <nav>
@@ -25,25 +27,25 @@
 
     <section id="main">
         <main>
-            <h1>Welcome to elementzprojects.</h1>
+            <h1 data-aos="zoom-in">Welcome to elementzprojects.</h1>
         </main>
     </section>
     <section id="featured-projects">
         <main>
             <h1>Featured Projects</h1>
-                <div class="project white">
+                <div data-aos="fade-right" class="project white">
                     <h1>King of the Light</h1>
                     <p class="desc">This game is a King of the Hill-themed game. The objective of the game is to grab the light, and keep holding on the light for 30 seconds. You do not want to have the opponent take possession of the light. Whoever has the light after 30 seconds wins!</p>
                     <br>
                     <p><a id="ok" href="/King of the Light/">Try it out!</a></p>
                 </div>
-                <div class="project black" style="position: relative;bottom:-25rem; z-index: 999;">
+                <div data-aos="fade-left" class="project black" style="position: relative;bottom:-25rem; z-index: 999;">
                     <h1>Invasive Bacterium</h1>
                     <p class="desc">Invasive Bacterium is a game where you are playing defense and you do not want the Bacterium to enter your side. Every time you successfully shoot a bacterium, you get one point. However, if they are able to get to the other side, they get a point. Whoever gets the most points after 30 seconds wins!</p>
                     <p><a id="bro" href="/Invasive Bacterium/">Try it out!</a></p>
                 </div>
 
-                <div class="project white" style="position: relative;bottom:-25rem; z-index: 999;"> 
+                <div data-aos="fade-right" class="project white" style="position: relative;bottom:-25rem; z-index: 999;"> 
                         <h1>ForceRun! 2D</h1>
                         <p class="desc">This is a simple avoid-the-obstacle game. You are supposed to dodge the blocks that are falling down. However, the player movement is different - everytime you press A or D, there is an invisible force added to the object, so you need to be careful to not go too fast.</p>
                         <br>
@@ -64,5 +66,8 @@
 
     </section>
 </section>
+    <script>
+        AOS.init()
+    </script>
 </body>
 </html>
