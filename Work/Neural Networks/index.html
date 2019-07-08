@@ -7,8 +7,12 @@
     <title>elementzprojects</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../style.css">
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <section class="page">
     <section id="navbar">
         <nav>
@@ -28,7 +32,7 @@
             <h1>Unity Games</h1>
         </main>
     </section>
-    <section id="featured-projects">
+    <section data-aos="fade-right" id="featured-projects">
         <main>
             <h1>Neural Networks</h1>
                 <div class="project white">
@@ -53,5 +57,10 @@
 
     </section>
 </section>
+    
+    
+      <script>
+        AOS.init()
+    </script>
 </body>
 </html>
