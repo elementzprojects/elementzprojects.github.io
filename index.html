@@ -8,68 +8,54 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-</head>
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web:700,400&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/f34480ec5c.js" crossorigin="anonymous"></script>
+  
+    </head>
 <body>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+<div class="center">
+<div class="nav">
+    <div class="logo">
+       <a href="#"><img src="./logo.png" width=80  height=80 alt=""></a>
+    </div>
+    <ul id="nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="Work/">PROJECTS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        
+    </ul>
+</div>      
 
-    <section class="page">
-    <section id="navbar">
-        <nav>
-            <ul id="nav">
+    <div class="showcase center">
+        <img id="img" style="width:100%;height:80vh;text-align:center;" src="snow.jpg" alt="">
+        <div id="center-text" >Welcome to elementzprojects.</div>
+        <div class="row">
+        <div class="item">
+                <img id="games" src="./games.jpg" alt="">
+                <h1>Games</h1>
+                <p>Check out some games that I've developed in Unity!</p>
+                <button class="visit"><a href="Work/">Visit</a></button>
 
-            
-            <li><h3><a href="#">elementzprojects</a></h3></li>
-            <li class="right-links"><h3><a href="/Work">my projects</a></h3></li>
-            <li class="right-links"><h3><a href="/">home</a></h3></li>
+        </div>
+        <div class="item">
+                <img id="ai" src="./ai.jpg" alt="">
 
-        </ul>
-        </nav>
-    </section>
+            <h1>Artificial Intellgence and Deep Learning</h1>
+            <p>I have developed several neural networks, ranging from creating predictions based on an input value, to a computer playing games! Check out some of them here!</p>
+            <button class="visit"><a href="Work/">Visit</a></button>
+        </div>
+    </div>
+    </div>
+    <div class="follow">
+        <h1>Follow Me</h1>
+            <div class="row">
+                <a class="i" href="https://github.com/elementzprojects" title="GitHub"><i class="fab fa-github fa-5x"></i></a>
+                <a class="i" href="https://neocities.org/site/elementz" title="Neocities"><i class="fas fa-cat fa-5x"></i></a>
+                         </div>
+        </div>
+</div>
+</div>
 
-    <section id="main">
-        <main>
-            <h1 data-aos="zoom-in">Welcome to elementzprojects.</h1>
-        </main>
-    </section>
-    <section id="featured-projects">
-        <main>
-            <h1>Featured Projects</h1>
-                <div data-aos="fade-right" class="project white">
-                    <h1>King of the Light</h1>
-                    <p class="desc">This game is a King of the Hill-themed game. The objective of the game is to grab the light, and keep holding on the light for 30 seconds. You do not want to have the opponent take possession of the light. Whoever has the light after 30 seconds wins!</p>
-                    <br>
-                    <p><a id="ok" href="/King of the Light/">Try it out!</a></p>
-                </div>
-                <div data-aos="fade-left" class="project black" style="position: relative;bottom:-25rem; z-index: 999;">
-                    <h1>Invasive Bacterium</h1>
-                    <p class="desc">Invasive Bacterium is a game where you are playing defense and you do not want the Bacterium to enter your side. Every time you successfully shoot a bacterium, you get one point. However, if they are able to get to the other side, they get a point. Whoever gets the most points after 30 seconds wins!</p>
-                    <p><a id="bro" href="/Invasive Bacterium/">Try it out!</a></p>
-                </div>
-
-                <div data-aos="fade-right" class="project white" style="position: relative;bottom:-25rem; z-index: 999;"> 
-                        <h1>ForceRun! 2D</h1>
-                        <p class="desc">This is a simple avoid-the-obstacle game. You are supposed to dodge the blocks that are falling down. However, the player movement is different - everytime you press A or D, there is an invisible force added to the object, so you need to be careful to not go too fast.</p>
-                        <br>
-                        <p><a id="what" href="/forcerun/">Try it out!</a></p>
-                    </div>
-                    
-        </main>
-
-    </section>
-    <section id="footer" style="position: relative;bottom:-40rem;">
-            <hr style="width:80%;">
-
-            <h1>Check these out!</h1>
-            <p><a href="https://elementz.neocities.org"><span style="color:orange">.</span>neo</a></p>
-            <p><a href="../https:/github.com/elementzprojects"><span style="color:#9cdaf1">.</span>git</a></p>
-
-
-
-    </section>
-</section>
-    <script>
-        AOS.init()
-    </script>
 </body>
 </html>
