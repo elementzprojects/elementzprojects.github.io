@@ -1,33 +1,128 @@
-.loading-page{
-    background-image: url('./Assets/logo-Recovered.svg') no-repeat;
-    background-size: contain;
+body, html {
+    margin:0;
+    padding:0;
 }
-.cls-1{
-    animation: hideshow 10s ease infinite;
-  }
+
+.container{
+    width:100%;
+    height:100%;
+    background-color:#000;
+}
 
 #line1{
-    animation: lines 1s ease;
+    animation: lines 1s, rotateLines 1s;
+    animation-delay: 0s, 2s, 4s;
     transform-origin:center;
+    animation-fill-mode: forwards;
 }
 #line2{
-    animation: lines2 1s ease;
+    animation: lines2 1s, rotateLines 1s;
+    animation-delay: 0s, 2s, 4s;
     transform-origin:center;
+    animation-fill-mode: forwards;
+
+}
+
+.cls-2, .cls-3{
+    visibility:hidden;
+    animation: text 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+.p{
+    animation: letterRotation 1s, downscale 1s;
+    animation-delay: 2s, 3s;
+    transform-origin:center;
+    animation-fill-mode: forwards;
+
+}
+.loading-page{
+    width:100%;
+    height:100vh;
+    /* background-color: rgb(43, 40, 40); */
+    background-color: #000;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* animation: transitionFromIntro 1s ease; 
+    animation-delay: 4s;
+    animation-fill-mode: forwards; */
+
 }
 
 @keyframes lines{
-    from{
+    0% {
         transform: scale(0);
     }
-    to {
+    25%{
+        transform: scale(1);
+    }
+    
+    100% {
         transform: scale(1);
     }
 }
+
 @keyframes lines2{
-    from{
+    0% {
         transform: scale(0);
     }
-    to {
+    25%{
+        transform: scale(1);
+    }
+    100% {
         transform: scale(1);
     }
 }
+
+@keyframes text{
+    0% {
+        opacity: 0%;
+    }
+    1%{
+        opacity: 0%;
+        visibility: visible;
+    }
+    100% {
+        opacity: 100%;
+
+        visibility: visible;
+    }
+}
+@keyframes rotateLines {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+@keyframes letterRotation {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes downscale{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+/* @keyframes transitionFromIntro{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform:scale(0);
+        visibility: hidden;
+    }
+} */
