@@ -1,0 +1,33 @@
+.loading-page{
+    background-image: url('./Assets/logo-Recovered.svg') no-repeat;
+    background-size: contain;
+}
+.cls-1{
+    animation: hideshow 10s ease infinite;
+  }
+
+#line1{
+    animation: lines 1s ease;
+    transform-origin:center;
+}
+#line2{
+    animation: lines2 1s ease;
+    transform-origin:center;
+}
+
+@keyframes lines{
+    from{
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes lines2{
+    from{
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
