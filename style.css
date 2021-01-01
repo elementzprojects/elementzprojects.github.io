@@ -2,9 +2,9 @@ body, html {
     margin:0;
     padding:0;
     background-color:black;
-    overflow-y:hidden;
+    /* overflow-y:hidden; */
     color:white;
-    font-family: "Avenir Next";
+    font-family: "Avenir";
     font-weight: 300;
 }
 
@@ -60,6 +60,9 @@ body, html {
     animation-delay: 4s;
     animation-fill-mode: forwards; */
 
+}
+nav{
+    padding:40px;
 }
 
 /* .loading-page #svg{
